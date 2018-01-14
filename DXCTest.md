@@ -1,6 +1,8 @@
 # Technical Writer Tips and Tricks
 
 ## Table of Contents
+ - [Document Standards](#document-standards)
+   - [File and Folder Names](#file-and-folder-names)
 - [Document Purpose](#document-purpose)
 - [Identify Your Audience](#identify-your-audience)
    - [Account Managers](#account-managers)
@@ -9,9 +11,23 @@
    - [Support Team](#support-team)
  - [Provide Examples](#provide-examples)
  - [Be Specific](#be-specific)
- - [Document Standards](#document-standards)
-   - [File and Folder Names](#file-and-folder-names)
  - [Glossary](#glossary)
+
+## Document Standards
+
+You are strongly urged to use a standard formatting template.  This should include:
+1.  A document title which is clear
+2.  A statement of purpose for the document
+3.  Identify the intended audience
+4.  The author of the document
+5.  A revision history, if appropriate
+6.  What version/release the information applies to, if appropriate
+
+[Back to Top](#top)
+
+### File and Folder Names
+
+[Back to Top](#top)
 
 ## Document Purpose
 
@@ -90,22 +106,6 @@ The support team would require deployment, monitoring, and troubleshooting infor
        * using the term 'company-designated holiday' would be clearer
    * If referring to a database field, use the table name and field name
    * There may be other regional differences, such as the formatting of date values - MM-DD-YYYY or DD-MM-YYYY.
-
-[Back to Top](#top)
-
-## Document Standards
-
-You are strongly urged to use a standard formatting template.  This should include:
-1.  A document title which is clear
-2.  A statement of purpose for the document
-3.  Identify the intended audience
-4.  The author of the document
-5.  A revision history, if appropriate
-6.  What version/release the information applies to, if appropriate
-
-[Back to Top](#top)
-
-### File and Folder Names
 
 [Back to Top](#top)
 
