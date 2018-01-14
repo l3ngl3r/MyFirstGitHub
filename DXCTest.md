@@ -3,6 +3,8 @@
 ## Table of Contents
  - [Document Standards](#document-standards)
    - [File and Folder Names](#file-and-folder-names)
+     - [File Names](#file-names)
+     - [Folder Names](#folder-names)
 - [Document Purpose](#document-purpose)
 - [Identify Your Audience](#identify-your-audience)
    - [Account Managers](#account-managers)
@@ -22,10 +24,38 @@ You are strongly urged to use a standard formatting template.  This should inclu
 4.  The author of the document
 5.  A revision history, if appropriate
 6.  What version/release the information applies to, if appropriate
+7.  Certain documents may also require the DXC branding or logo to be included - especially any document intended for external customers.
+    * Example of a valid DXC Logo  
+  ![alt text](https://github.com/l3ngl3r/MyFirstGitHub/blob/master/dxc-logo.jpg "DXC Logo")
 
 [Back to Top](#top)
 
 ### File and Folder Names
+
+People often search for documents within a repository using a file name, so the naming conventions of the files and folders should be consistent.  Keeping a well-organized naming structure makes it easier for people to quickly locate the information they need.
+
+Review any existing naming standards for your team before creating a new structure.
+
+[Back to Top](#top)
+
+#### File Names
+
+The file name should be descriptive of it's contents.  Utilize keywords which someone might use to search, such as the application name (DXCTest), the topic (contacts), or other descriptors such as "GetCompanyDataAPI".  Always consider the intended audience when naming files as a front-end user would search on different keywords than a technical resource might use.
+
+[Back to Top](#top)
+
+#### Folder Names
+
+Folder names should follow a logical heirarchy, with the highest level being the most generic and folder names becoming more specific as you drill down.
+
+\CoreTeam\UserGuides\CDS  
+\CoreTeam\UserGuides\DXCTest    
+\CoreTeam\UserGuides\Provisioning    
+\CoreTeam\UserGuides\ServiceNow    
+\CoreTeam\SupportDocumentation\Security\CDS  
+\CoreTeam\SupportDocumentation\Security\DXCTest  
+\CoreTeam\SupportDocumentation\Security\Provisioning  
+\CoreTeam\SupportDocumentation\Security\ServiceNow  
 
 [Back to Top](#top)
 
