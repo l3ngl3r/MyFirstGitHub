@@ -3,6 +3,7 @@
 ## Table of Contents
  - [Characteristics of Good Technical Writing](#characteristics-of-good-technical-writing)
  - [Document Standards](#document-standards)
+   - [Standard Formatting](#standard-formatting)
    - [File and Folder Names](#file-and-folder-names)
      - [File Names](#file-names)
      - [Folder Names](#folder-names)
@@ -32,6 +33,8 @@ A good technical writing product exhibits the following characteristics:
 [Back to Top](#top)
 
 ## Document Standards
+
+### Standard Formatting
 
 You are strongly urged to use a standard formatting template.  Having a cohesive feel between documents - regardless of author - presents a professional and organized impression to your enterprise.
 
