@@ -21,6 +21,14 @@ A technical writer has to be able to write to a wide range of audiences on topic
 
 There are even Wikipedia pages for both [Technical Writer](https://en.wikipedia.org/wiki/Technical_writer "Wikipedia") and [Technical Writing](https://en.wikipedia.org/wiki/Technical_writing "Wokipedia") if you are just getting started.
 
+A good technical writing product exhibits the following characteristics:
+* Accuracy
+* Clarity
+* Conciseness
+* Readability
+* Usability
+* Correctness
+
 [Back to Top](#top)
 
 ## Document Standards
@@ -37,6 +45,15 @@ A standard format should include:
 7.  Certain documents may also require the DXC branding or logo to be included.  A customer's logo may also be used as needed.
     * Example of a valid DXC Logo  
   ![alt text](https://github.com/l3ngl3r/MyFirstGitHub/blob/master/dxc-logo.jpg "DXC Logo")
+
+8.  If modifying an existing document, it may be desirable to mark the changes for the user using block quotes.
+
+     ... this is part of the existing documentation that was unchanged.
+>      This is new or changed information in the document.  
+>      The blockquotes may be used to show these lines have changed.  
+     
+     ... then we go back to existing wording without blockquotes.
+
 
 [Back to Top](#top)
 
@@ -107,14 +124,14 @@ Every document should be written in language appropriate to the consumer of the 
    * There may be other regional differences, such as the formatting of date values - MM-DD-YYYY or DD-MM-YYYY.
    * If referring to a database field, use the table name and field name.
    * For test cases, provide detailed steps ensuring code coverage - both positive and negative results.
-   * Provide code examples as appropriate.  Pseudo-code may be appropriate in many cases.  For example:  
+   * Provide code examples as needed.  Pseudo-code may be appropriate in many cases.  If using GitHub, formatting support is available for many languages which will make the documented code more readable for the user.  For example:  
+   ```csharp
+      private void index(){
+      MessageBox.Show("hello world");
+      }
    ```
-       -- when inserting a new user
-       if accesslevel is null
-           set priority = 1
-           set accesslevel = 0
-           display a message to the user
-       end if
+   ```sql
+      update PERS_SECURITY set priority = 1, access_level = 0 where pers_id = 12345;
    ```
    * If describing the use of a service or API call, there are details described in this [GitHub Article](https://gist.github.com/iros/3426278 "GitHub REST API") to show the level of detail to include.  Ensure the document consumer has all the pieces needed to do their work.
 
