@@ -1,30 +1,40 @@
 # Technical Writer Tips and Tricks
 
 ## Table of Contents
+ - [Characteristics of Good Technical Writing](#characteristics-of-good-technical-writing)
  - [Document Standards](#document-standards)
    - [File and Folder Names](#file-and-folder-names)
      - [File Names](#file-names)
      - [Folder Names](#folder-names)
 - [Document Purpose](#document-purpose)
 - [Identify Your Audience](#identify-your-audience)
-   - [Account Managers](#account-managers)
-   - [Front End Users](#front-end-users)
-   - [Developers](#developers)
-   - [Support Team](#support-team)
- - [Provide Examples](#provide-examples)
- - [Be Specific](#be-specific)
- - [Glossary](#glossary)
+- [Be Specific](#be-specific)
+- [Glossary](#glossary)
+
+## Characteristics of Good Technical Writing
+
+A technical writer has to be able to write to a wide range of audiences on topics from high-level overviews to task-level documents to coding guidance.  You can find many resources on the internet with samples and guidelines, and there are also courses which you can take to learn more about best practices.  A few references are listed here.
+
+[MIT Effective Technical Communication](http://web.mit.edu/communicate/effective_comm.html "mit.edu")  
+[Qualities of a Good Technical Report](https://www.aboutcivil.org/characteristics-of-technical-report-writing.html "AboutCivilEngineering")  
+[Great Examples of Technical Writing](http://www.helpscribe.com/2008/12/great-examples-of-technical-writing.html "HelpScribe")
+
+There are even Wikipedia pages for both [Technical Writer](https://en.wikipedia.org/wiki/Technical_writer "Wikipedia") and [Technical Writing](https://en.wikipedia.org/wiki/Technical_writing "Wokipedia") if you are just getting started.
+
+[Back to Top](#top)
 
 ## Document Standards
 
-You are strongly urged to use a standard formatting template.  This should include:
+You are strongly urged to use a standard formatting template.  Having a cohesive feel between documents - regardless of author - presents a professional and organized impression to your enterprise.
+
+A standard format should include:
 1.  A document title which is clear
 2.  A statement of purpose for the document
-3.  Identify the intended audience
+3.  State the intended audience
 4.  The author of the document
 5.  A revision history, if appropriate
-6.  What version/release the information applies to, if appropriate
-7.  Certain documents may also require the DXC branding or logo to be included - especially any document intended for external customers.
+6.  Which version/release the information applies to, if appropriate
+7.  Certain documents may also require the DXC branding or logo to be included.  A customer's logo may also be used as needed.
     * Example of a valid DXC Logo  
   ![alt text](https://github.com/l3ngl3r/MyFirstGitHub/blob/master/dxc-logo.jpg "DXC Logo")
 
@@ -34,13 +44,15 @@ You are strongly urged to use a standard formatting template.  This should inclu
 
 People often search for documents within a repository using a file name, so the naming conventions of the files and folders should be consistent.  Keeping a well-organized naming structure makes it easier for people to quickly locate the information they need.
 
-Review any existing naming standards for your team before creating a new structure.
+Review any existing naming standards for your team before creating a new structure.  This ensures consistency in presentation.
 
 [Back to Top](#top)
 
 #### File Names
 
-The file name should be descriptive of it's contents.  Utilize keywords which someone might use to search, such as the application name (DXCTest), the topic (contacts), or other descriptors such as "GetCompanyDataAPI".  Always consider the intended audience when naming files as a front-end user would search on different keywords than a technical resource might use.
+The file name should be descriptive of it's contents without being too long.  Utilize keywords which someone might use to search, such as the application name (DXCTest), the topic (contacts), or other descriptors such as "GetCompanyDataAPI".  Always consider the intended audience when naming files as a front-end user would search on different keywords than a technical resource might use.
+
+If your folder structure is also well named then your file names can be shorter since some of the context can be derived from the folder name.
 
 [Back to Top](#top)
 
@@ -61,86 +73,59 @@ Folder names should follow a logical heirarchy, with the highest level being the
 
 ## Document Purpose
 
-Before you start creating a document, you should first identify the purpose of your document.  Ask yourself a few questions to ensure you understand what the end product will provide.
+Before you start creating a document, you should first identify the purpose of your document.  Ask yourself a few questions to ensure you understand what the end product needs to provide.
 
-  * Who is your audience?
-  * Is a new document required, or is it more appropriate to update an existing document?
+  * Who is your intended audience?
+  * Is a new document required, or is it more appropriate to update an existing document with the new information?
+  * Do you have enough information to create a complete document?
+  * Are there other people you need to collaborate with in creating the document?
   
   [Back to Top](#top)
 
 ## Identify Your Audience
 
-Every document should be written in language appropriate to the consumer of the information.  By identifying your audience you will know the level of detail to be provided.  Below you will see some examples of how you might document contact/user information for a sample application I will refer to as the DXCTest Application.
+Every document should be written in language appropriate to the consumer of the information.  By identifying your audience you will know the level of detail to be provided.  Some examples of different documentation types are listed below.
 
-[Back to Top](#top)
+|  Audience| Type of Documents |
+|:-----------:|:---------------------------------|
+|Account Managers| High-Level Overview|
+|Front-End Users | User guide for UI tasks - menus, unique keys, default values|
+|Developers| API formats, Business Requirements, Database Tables/Keys/Triggers|
+|Test Team| Detailed test steps for both positive and negative tests|
+|Support Team| Deployment Guides, Troubleshooting Documentation|
 
-### Account Managers
-
-An account manager wouldn't need to know the technical details of how contact information is created or stored.  A high level summary would be appropriate.
-1.  Contact information for each unique user is stored in the DXCTest Application.
-
-Note that there is no item #2.  We wouldn't need to explain other details related to contacts since the account manager wouldn't be responsible for data changes, coding, or support.
-
-[Back to Top](#top)
-
-### Front End Users
-
-Documentation for a front end user would contain details around UI tasks.  It would be appropriate to include screenshots and other detail helpful to their tasks.
-1.  Contact information for each unique user is stored in the DXCTest Application.  
-       * A unique user is based on the network login name stored within the record.
-2.  The following fields are available for each contact record.
-
-|   Field Label   |   Required?  |  Allowed Values  | Max Length|   Example     |
-|-----------------|:------------:|:-----------------|:---------:|:-------------|
-|UserID| Yes| Alphanumeric|20|SJONES3|
-| First Name  | Yes| Alphanumeric|50| Susan| 
-|Last Name| Yes | Alphanumeric, dash|50| Jones|
-|Phone Number| No| Numbers, parenthesis, dash|12| 214-555-1212|
-|Access Level| No| Numbers (Default is 0)|2| 3|
-
-3.  Fields are not case-sensitive.
-4. Any leading or trailing spaces entered will be removed from the stored data.
-
-If there are any data transformation rules the user may need to understand then you can detail them at the field level, or in pseudo code or text.
-
-5.  If no Access Level is entered, a default of 0 will be applied to new records.
-
-[Back to Top](#top)
-
-### Developers
-
-Developer documentation is focused more on the technical aspects - database, APIs, keys, data transformation, etc.  Data you might provide is outlined below.
-
-[Back to Top](#top)
-
-### Support Team
-
-The support team would require deployment, monitoring, and troubleshooting information.
-
-[Back to Top](#top)
-
-## Provide Examples
-
-
-   
-   
 [Back to Top](#top)
 
 ## Be Specific
 
 *Terminology matters!*  Always be aware of terms you put into your document since we are a global workplace and information can be interpreted differently based on location or experience. 
-   * When referring to a field on a UI screen, use the actual field name shown to the user.
+   * When referring to a field on a UI screen, use the actual field name shown to the user.  Provide a screenshot as needed.
    * Be aware of regional differences in the meaning of words.
        * a 'Holiday' in the US is a company-paid day off.
        * a 'Holiday' in a European country is a vacation.
-       * using the term 'company-designated holiday' would be clearer
-   * If referring to a database field, use the table name and field name
+       * using the term 'company-designated holiday' may be clearer.
    * There may be other regional differences, such as the formatting of date values - MM-DD-YYYY or DD-MM-YYYY.
+   * If referring to a database field, use the table name and field name.
+   * For test cases, provide detailed steps ensuring code coverage - both positive and negative results.
+   * Provide code examples as appropriate.  Pseudo-code may be appropriate in many cases.  For example:  
+   ```
+       -- when inserting a new user
+       if accesslevel is null
+           set priority = 1
+           set accesslevel = 0
+           display a message to the user
+       end if
+   ```
+   * If describing the use of a service or API call, there are details described in this [GitHub Article](https://gist.github.com/iros/3426278 "GitHub REST API") to show the level of detail to include.  Ensure the document consumer has all the pieces needed to do their work.
+
+Try to think like the consumer of your document.  What information would they need to fully understand their use of your application or service?  When writing procedure-like information, it's always a good idea to take your finished document and step through the pieces line by line just like a consumer would.  You may find gaps in your steps or wording modifications that would provide more clarity.
+
+When in doubt, it's better to provide more detail than less detail.  Be mindful of feedback provided on your documentation and tweak the level of detail in future documents of that type as you get to know your audiences better.
 
 [Back to Top](#top)
 
 ## Glossary
 
-We utilize may acronyms in our day-to-day work.  A best practice would be to utilize a common glossary that contains abbreviations and their definitions, plus other terms which are common across the enterprise.  If no common glossary exists, add a glossary section to your document to ensure readers are clear on what your references mean.  
+We utilize many acronyms in our day-to-day work.  A best practice could be to utilize a common glossary that contains abbreviations and their definitions, plus other terms which are common across the enterprise.  If no common glossary exists, add a glossary section to your document to ensure readers are clear on what your references mean.  
 
 [Back to Top](#top)
